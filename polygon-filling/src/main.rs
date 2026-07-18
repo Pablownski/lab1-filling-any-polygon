@@ -3,6 +3,7 @@ mod line;
 mod poligono1;
 mod poligono2;
 mod poligono3;
+mod poligono4;
 
 use image::{Rgb, RgbImage};
 
@@ -15,6 +16,7 @@ fn main() {
     poligono1::draw(&mut img);
     poligono2::draw(&mut img);
     poligono3::draw(&mut img);
+    poligono4::draw(&mut img);
 
     img.save("out.bmp").expect("failed to save image");
     println!("Saved out.bmp ({}x{})", WIDTH, HEIGHT);
