@@ -12,6 +12,7 @@ fn main() {
 
     poligono4::draw(&mut img);
 
+    img.save("out.png").expect("failed to save image");
     img.save("out.bmp").expect("failed to save image");
-    println!("Saved out.bmp ({}x{})", WIDTH, HEIGHT);
+    println!("Saved out.png and out.bmp ({}x{})", WIDTH, HEIGHT);
 }
