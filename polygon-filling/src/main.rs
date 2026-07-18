@@ -1,8 +1,6 @@
 mod fill;
 mod line;
-mod poligono1;
-mod poligono2;
-mod poligono3;
+mod poligono4;
 
 use image::{Rgb, RgbImage};
 
@@ -12,9 +10,7 @@ const HEIGHT: u32 = 500;
 fn main() {
     let mut img = RgbImage::from_pixel(WIDTH, HEIGHT, Rgb([0, 0, 0]));
 
-    poligono1::draw(&mut img);
-    poligono2::draw(&mut img);
-    poligono3::draw(&mut img);
+    poligono4::draw(&mut img);
 
     img.save("out.bmp").expect("failed to save image");
     println!("Saved out.bmp ({}x{})", WIDTH, HEIGHT);
